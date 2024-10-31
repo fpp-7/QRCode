@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- res/drawable/button_border_3d.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Sombra inferior e direita para o efeito 3D -->
+    <item android:right="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#B0BEC5" /> <!-- Cor da sombra (cinza escuro) -->
+            <corners android:radius="16dp" /> <!-- Arredondamento das bordas -->
+        </shape>
+    </item>
+
+    <!-- Camada de fundo com gradiente para o efeito de 3D nas bordas -->
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:startColor="#FFFFFF"
+                android:centerColor="#F5F5F5"
+                android:endColor="#EEEEEE"
+                android:angle="90" />
+            <corners
+                android:radius="16dp" />
+        </shape>
+    </item>
+
+    <!-- Camada do contorno da borda para destacar o 3D -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" /> <!-- Cor branca de fundo -->
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#CCCCCC" /> <!-- Cor da borda (cinza claro) -->
+        </shape>
+    </item>
+</layer-list>
