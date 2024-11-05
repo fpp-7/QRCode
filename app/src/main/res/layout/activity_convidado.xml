@@ -31,7 +31,6 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             style="@style/Text"
-            android:hint="E-mail"
             android:layout_marginTop="20dp"
             android:gravity="center"
             app:layout_constraintEnd_toEndOf="@id/containerComponents"
